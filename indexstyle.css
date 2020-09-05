@@ -43,7 +43,7 @@ a:hover { text-decoration: none; font-weight:700; }
 a:focus { text-decoration: none; color:white; font-weight:700;}
 a:hover, a:active { text-decoration: none; color:white;font-weight:700;} 
 span a { 
-    background-color:#333333;
+    background-color:#FFB1B0;
 }
 #name_div{ font-family:'Roboto', sans-serif; font-size:50px; margin:auto; text-align:center; color:white; padding-top: 10%;}
 #descrip_div{ font-family:'Roboto', sans-serif; font-size:30px; margin:auto; text-align:center; color:white; }
