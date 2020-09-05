@@ -62,8 +62,7 @@ function createProjectDiv(title, description, imgURL, link){
     textDiv.appendChild(d);
     cd.appendChild(i);
 }
-createProjectDiv("Spherio", "This is an aiming/strategy browser game that I solo-developed from scratch over the course of about two months using the Javascript visualization library p5.js. The source code can be found <a href = 'https://github.com/L-F-N/L-F-N.github.io'>here.</a> ", "spherio_thumbnail.JPG", "spherio/spherio.html")
-createProjectDiv("2048.cpp", "This is a command prompt port of the popular mobile game 2048, which I made in C++. ", "2048.jpg", "https://github.com/evanclough/2048" )
+createProjectDiv("Spherix", "I wouldn't play this if I were you", "spherio_thumbnail.JPG", "spherio/spherio.html")
 
 
 
