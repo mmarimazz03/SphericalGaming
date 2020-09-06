@@ -17,22 +17,22 @@ var playergradient
 var opponentgradient
 
 function preload() {
-  opponentdeathnoise = loadSound("opponentdeathnoise.mp3")
-  powerupnoise = loadSound("powerupnoise.mp3")
-  deathnoise = loadSound("playerdeathnoise.mp3")
-  buttonclick = loadSound("buttonclick.mp3")
-  hitnoise = loadSound("hitnoise.mp3")
-  beatloop = loadSound("beatloop.mp3")
-  menuloop = loadSound("menuloop.mp3")
-  goalhitnoise = loadSound("goalhitnoise.mp3")
-  goodfont = loadFont('Monda-Regular.ttf')
-  heart = loadImage("heart.png")
-  icecube = loadImage("iceblock.png")
-  bolt = loadImage("bolt.svg")
+  spheriomediafiles/opponentdeathnoise = loadSound("opponentdeathnoise.mp3")
+  spheriomediafiles/powerupnoise = loadSound("powerupnoise.mp3")
+  spheriomediafiles/deathnoise = loadSound("playerdeathnoise.mp3")
+  spheriomediafiles/buttonclick = loadSound("buttonclick.mp3")
+  spheriomediafiles/hitnoise = loadSound("hitnoise.mp3")
+  spheriomediafiles/beatloop = loadSound("beatloop.mp3")
+  spheriomediafiles/menuloop = loadSound("menuloop.mp3")
+  spheriomediafiles/goalhitnoise = loadSound("goalhitnoise.mp3")
+  spheriomediafiles/goodfont = loadFont('Monda-Regular.ttf')
+  spheriomediafiles/heart = loadImage("heart.png")
+  spheriomediafiles/icecube = loadImage("iceblock.png")
+  spheriomediafiles/bolt = loadImage("bolt.svg")
   backgroundgradient = loadImage("backgroundgradient.jpg")
-  lock = loadImage("lock.png")
-  playergradient = loadImage("playergradient.png")
-  opponentgradient = loadImage("opponentgradient.png")
+  spheriomediafiles/lock = loadImage("lock.png")
+  spheriomediafiles/playergradient = loadImage("playergradient.png")
+  spheriomediafiles/opponentgradient = loadImage("opponentgradient.png")
 }
 
 
