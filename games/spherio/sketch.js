@@ -1,20 +1,20 @@
-var buttonclick;
-var hitnoise;
-var beatloop;
-var goalhitnoise;
-var goodfont;
-var heart;
-var icecube;
-var menuloop;
-var bolt;
+var spheriomediafiles/buttonclick;
+var spheriomediafiles/hitnoise;
+var spheriomediafiles/beatloop;
+var spheriomediafiles/goalhitnoise;
+var spheriomediafiles/goodfont;
+var spheriomediafiles/heart;
+var spheriomediafiles/icecube;
+var spheriomediafiles/menuloop;
+var spheriomediafiles/bolt;
 
-var deathnoise
-var powerupnoise
-var opponentdeathnoise
-var backgroundgradient
-var lock
-var playergradient
-var opponentgradient
+var spheriomediafiles/deathnoise
+var spheriomediafiles/powerupnoise
+var spheriomediafiles/opponentdeathnoise
+var spheriomediafiles/backgroundgradient
+var spheriomediafiles/lock
+var spheriomediafiles/playergradient
+var spheriomediafiles/opponentgradient
 
 function preload() {
   opponentdeathnoise = loadSound("opponentdeathnoise.mp3")
