@@ -1,20 +1,20 @@
-var spheriomediafiles/buttonclick;
-var spheriomediafiles/hitnoise;
-var spheriomediafiles/beatloop;
-var spheriomediafiles/goalhitnoise;
-var spheriomediafiles/goodfont;
-var spheriomediafiles/heart;
-var spheriomediafiles/icecube;
-var spheriomediafiles/menuloop;
-var spheriomediafiles/bolt;
+var buttonclick;
+var hitnoise;
+var beatloop;
+var goalhitnoise;
+var goodfont;
+var heart;
+var icecube;
+var menuloop;
+var bolt;
 
-var spheriomediafiles/deathnoise
-var spheriomediafiles/powerupnoise
-var spheriomediafiles/opponentdeathnoise
-var spheriomediafiles/backgroundgradient
-var spheriomediafiles/lock
-var spheriomediafiles/playergradient
-var spheriomediafiles/opponentgradient
+var deathnoise
+var powerupnoise
+var opponentdeathnoise
+var backgroundgradient
+var lock
+var playergradient
+var opponentgradient
 
 function preload() {
   opponentdeathnoise = loadSound("opponentdeathnoise.mp3")
@@ -47,23 +47,23 @@ function draw() {
   image(backgroundgradient, 0, 0, w, h)
   
   if(mn.mutedstatus === "off"){
-     menuloop.setVolume(0) 
-    beatloop.setVolume(0)
+     spheriomediafiles/menuloop.setVolume(0) 
+    spheriomediafiles/beatloop.setVolume(0)
   }
   if(mn.sfxmutedstatus === "off"){
-     powerupnoise.setVolume(0)
-     deathnoise.setVolume(0)
-    hitnoise.setVolume(0)
-    goalhitnoise.setVolume(0)
-    buttonclick.setVolume(0)
-    opponentdeathnoise.setVolume(0)
+     spheriomediafiles/powerupnoise.setVolume(0)
+     spheriomediafiles/deathnoise.setVolume(0)
+    spheriomediafiles/hitnoise.setVolume(0)
+    spheriomediafiles/goalhitnoise.setVolume(0)
+    spheriomediafiles/buttonclick.setVolume(0)
+    spheriomediafiles/opponentdeathnoise.setVolume(0)
   }else{
-      powerupnoise.setVolume(1)
-     deathnoise.setVolume(1)
-    hitnoise.setVolume(1)
-    goalhitnoise.setVolume(1)
-    buttonclick.setVolume(1)
-     opponentdeathnoise.setVolume(1)
+      spheriomediafiles/powerupnoise.setVolume(1)
+     spheriomediafiles/deathnoise.setVolume(1)
+    spheriomediafiles/hitnoise.setVolume(1)
+    spheriomediafiles/goalhitnoise.setVolume(1)
+    spheriomediafiles/buttonclick.setVolume(1)
+     spheriomediafiles/opponentdeathnoise.setVolume(1)
   }
   switch (mn.menustatus) {
     case -1:
@@ -82,9 +82,9 @@ function draw() {
       }
       if(mn.mutedstatus === "on"){
         if (frameCount < mn.fc6 + 120) {
-          menuloop.setVolume((frameCount - mn.fc6) / 120)
+          spheriomediafiles/menuloop.setVolume((frameCount - mn.fc6) / 120)
         } else {
-          menuloop.setVolume(1)
+          spheriomediafiles/menuloop.setVolume(1)
         }
       }
       break;
@@ -95,13 +95,13 @@ function draw() {
         fill(0)
         if(mn.mutedstatus === "on"){
         if (frameCount < mn.fc2 + 60) {
-          beatloop.setVolume((frameCount - mn.fc2) / 60)
+          spheriomediafiles/beatloop.setVolume((frameCount - mn.fc2) / 60)
         } else {
-          beatloop.setVolume(1)
+          spheriomediafiles/beatloop.setVolume(1)
         }
         }
       } else {
-        image(backgroundgradient, 0, 0, w, h)
+        spheriomediafiles/image(backgroundgradient, 0, 0, w, h)
         textSize(15)
         textFont(goodfont)
         fill(255)
@@ -439,26 +439,26 @@ function mouseClicked() {
       if (play.mouseIsOn) {
         reset()
         mn.menustatus = 1
-        buttonclick.play()
-        beatloop.loop()
-        menuloop.stop()
+        spheriomediafiles/buttonclick.play()
+        spheriomediafiles/beatloop.loop()
+        spheriomediafiles/menuloop.stop()
         mn.fc2 = frameCount
       } else if (lvl2.mouseIsOn) {
         mn.hardcoremode++
-        buttonclick.play()
+        spheriomediafiles/buttonclick.play()
       } else if (ttl.mouseIsOn) {
         mn.menustatus = 6
-        buttonclick.play()
+        spheriomediafiles/buttonclick.play()
         
       }else if(mutebutton.mouseIsOn) {
          mn.muted++
-         buttonclick.play()
+         spheriomediafiles/buttonclick.play()
       }else if(sfxmutebutton.mouseIsOn){
          mn.sfxmuted++
-         buttonclick.play()
+         spheriomediafiles/buttonclick.play()
       }else if(levelSelectorButton.mouseIsOn){
          mn.menustatus = 7 
-        buttonclick.play()
+        spheriomediafiles/buttonclick.play()
       }
       break;
     case 1:
@@ -472,9 +472,9 @@ function mouseClicked() {
         if (backtomenu.mouseIsOn) {
           mn.menustatus = 0
           mn.level = 1
-          beatloop.stop()
-          buttonclick.play()
-          menuloop.loop()
+          spheriomediafiles/beatloop.stop()
+          spheriomediafiles/buttonclick.play()
+          spheriomediafiles/menuloop.loop()
           mn.fc5 = frameCount
       mn.fc6 = frameCount
           
@@ -485,16 +485,16 @@ function mouseClicked() {
       if (pa.mouseIsOn) {
         reset()
         mn.menustatus = 1;
-        beatloop.loop()
+        spheriomediafiles/beatloop.loop()
         mn.fc2 = frameCount
-        buttonclick.play()
+        spheriomediafiles/buttonclick.play()
         mn.levelattempted[mn.level - 1] = true
 
       }
       if (lvl.mouseIsOn) {
         reset()
         mn.menustatus = 0
-        menuloop.loop()
+        spheriomediafiles/menuloop.loop()
         mn.fc5 = frameCount
       mn.fc6 = frameCount
         
@@ -505,7 +505,7 @@ function mouseClicked() {
       for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].mouseIsOn) {
           mn.level = i + 1
-          buttonclick.play()
+          spheriomediafiles/buttonclick.play()
           if (mn.ingamestatus === false) {
             mn.menustatus = 0
           } else {
@@ -517,15 +517,15 @@ function mouseClicked() {
     case 4:
       if (mouseX > nl.left && mouseX < nl.right && mouseY > pa.upper && mouseY < pa.lower) {
         reset()
-        buttonclick.play()
-        beatloop.loop()
+        spheriomediafiles/buttonclick.play()
+        spheriomediafiles/beatloop.loop()
         mn.fc2 = frameCount
         mn.menustatus = 1
-        menuloop.stop()
+        spheriomediafiles/menuloop.stop()
       }
       if (lvl.mouseIsOn) {
         mn.menustatus = 0
-        buttonclick.play()
+        spheriomediafiles/buttonclick.play()
         mn.fc5 = frameCount
       mn.fc6 = frameCount
         
@@ -534,29 +534,29 @@ function mouseClicked() {
     case 5:
       if (pmp.mouseIsOn) {
         mn.menustatus = 1
-        beatloop.loop()
+        spheriomediafiles/beatloop.loop()
         mn.fc2 = frameCount
 
       } else if (pbm.mouseIsOn) {
         mn.menustatus = 0
         reset()
-        menuloop.loop()
+        spheriomediafiles/menuloop.loop()
         mn.fc5 = frameCount
       mn.fc6 = frameCount
         
       }else if(mutebutton.mouseIsOn){
         mn.muted++
-        buttonclick.play()
+        spheriomediafiles/buttonclick.play()
       }else if(sfxmutebutton.mouseIsOn){
         
          mn.sfxmuted++
-         buttonclick.play()
+         spheriomediafiles/buttonclick.play()
       }
       break;
     case 6:
       if (backtomenu.mouseIsOn) {
         mn.menustatus = 0
-        buttonclick.play()
+        spheriomediafiles/buttonclick.play()
         
         mn.fc5 = frameCount
      
@@ -565,13 +565,13 @@ function mouseClicked() {
       for(var i = 0; i < colors.length; i++){
           if(colorButtons[i].mouseIsOn){
               p.skin = colors[i];
-              buttonclick.play();
+              spheriomediafiles/buttonclick.play();
           }
       }
       break;
     case -1:
       mn.menustatus = 0
-      menuloop.loop()
+      spheriomediafiles/menuloop.loop()
       mn.fc6 = frameCount
       break;
       
@@ -580,13 +580,13 @@ function mouseClicked() {
          if(levelButtons[i].mouseIsOn && mn.unlockedLevels[i]){
              mn.level = i + 1
            mn.menustatus = 0
-           buttonclick.play()
+           spheriomediafiles/buttonclick.play()
            
          }
       }
       if(levelSelectorBTM.mouseIsOn){
          mn.menustatus = 0
-        buttonclick.play()
+        spheriomediafiles/buttonclick.play()
       }
       break;
   }
