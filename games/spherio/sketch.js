@@ -17,22 +17,22 @@ var playergradient
 var opponentgradient
 
 function preload() {
-  spheriomediafiles/opponentdeathnoise = loadSound("opponentdeathnoise.mp3")
-  spheriomediafiles/powerupnoise = loadSound("powerupnoise.mp3")
-  spheriomediafiles/deathnoise = loadSound("playerdeathnoise.mp3")
-  spheriomediafiles/buttonclick = loadSound("buttonclick.mp3")
-  spheriomediafiles/hitnoise = loadSound("hitnoise.mp3")
-  spheriomediafiles/beatloop = loadSound("beatloop.mp3")
-  spheriomediafiles/menuloop = loadSound("menuloop.mp3")
-  spheriomediafiles/goalhitnoise = loadSound("goalhitnoise.mp3")
-  spheriomediafiles/goodfont = loadFont('Monda-Regular.ttf')
-  spheriomediafiles/heart = loadImage("heart.png")
-  spheriomediafiles/icecube = loadImage("iceblock.png")
-  spheriomediafiles/bolt = loadImage("bolt.svg")
-  backgroundgradient = loadImage("backgroundgradient.jpg")
-  spheriomediafiles/lock = loadImage("lock.png")
-  spheriomediafiles/playergradient = loadImage("playergradient.png")
-  spheriomediafiles/opponentgradient = loadImage("opponentgradient.png")
+  opponentdeathnoise = loadSound("spheriomediafiles/opponentdeathnoise.mp3")
+  powerupnoise = loadSound("spheriomediafiles/powerupnoise.mp3")
+  deathnoise = loadSound("spheriomediafiles/playerdeathnoise.mp3")
+  buttonclick = loadSound("spheriomediafiles/buttonclick.mp3")
+  hitnoise = loadSound("spheriomediafiles/hitnoise.mp3")
+  beatloop = loadSound("spheriomediafiles/beatloop.mp3")
+  menuloop = loadSound("spheriomediafiles/menuloop.mp3")
+  goalhitnoise = loadSound("spheriomediafiles/goalhitnoise.mp3")
+  goodfont = loadFont('spheriomediafiles/Monda-Regular.ttf')
+  heart = loadImage("spheriomediafiles/heart.png")
+  icecube = loadImage("spheriomediafiles/iceblock.png")
+  bolt = loadImage("spheriomediafiles/bolt.svg")
+  backgroundgradient = loadImage("spheriomediafiles/backgroundgradient.jpg")
+  lock = loadImage("spheriomediafiles/lock.png")
+  playergradient = loadImage("spheriomediafiles/playergradient.png")
+  opponentgradient = loadImage("spheriomediafiles/opponentgradient.png")
 }
 
 
