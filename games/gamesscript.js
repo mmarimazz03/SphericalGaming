@@ -63,3 +63,4 @@ function createProjectDiv(title, description, imgURL, link){
     cd.appendChild(i);
 }
 createProjectDiv("Spherix", "I wouldn't play this game if I were you. ", "spherio_thumbnail.JPG", "spherio/spherio.html")
+createProjectDiv("Captis", "Think you can handle this?. ", "spherio_thumbnail.JPG", "captis/captis.html")
