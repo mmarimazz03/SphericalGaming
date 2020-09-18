@@ -67,7 +67,6 @@ function Menu() {
     text('spherix', w / 2, h / 4)
     textSize(10)
     //devmode
-    text("(this won't be in actual game)press number keys to set level", w / 2, 7 * h / 8)
     textSize(15)
     if (Number.isInteger(this.hardcoremode / 2)) {
       this.hardcorestatus = "off"
