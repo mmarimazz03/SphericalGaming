@@ -18,23 +18,23 @@ var circlegradient;
 
 
 function preload() {
-  powerupnoise = loadSound("powerupnoise.mp3")
-  deathnoise = loadSound("playerdeathnoise.mp3")
-  buttonclick = loadSound("buttonclick.mp3")
-  hitnoise = loadSound("hitnoise.mp3")
-  beatloop = loadSound("beatloop.mp3")
-  menuloop = loadSound("menuloop.mp3")
-  goodfont = loadFont('RussoOne-Regular.ttf')
-  bolt = loadImage("bolt.svg")
-  backgroundgradient = loadImage("backgroundgradient.jpg")
-  lock = loadImage("lock.png")
-  playergradient = loadImage("playergradient.png")
-  opponentgradient = loadImage("opponentgradient.png")
-  flagimage = loadImage("goodflag.png");
-  portalgradient = loadImage("portalgradient.png");
-  yellowcirculargradient = loadImage("yellowcirculargradient.png");
-  greencirculargradient = loadImage("greencirclegradient.png");
-  circlegradient=  loadImage("circlegradient.png");
+  powerupnoise = loadSound("captismediafiles/powerupnoise.mp3")
+  deathnoise = loadSound("captismediafiles/playerdeathnoise.mp3")
+  buttonclick = loadSound("captismediafiles/buttonclick.mp3")
+  hitnoise = loadSound("captismediafiles/hitnoise.mp3")
+  beatloop = loadSound("captismediafiles/beatloop.mp3")
+  menuloop = loadSound("captismediafiles/menuloop.mp3")
+  goodfont = loadFont('captismediafiles/RussoOne-Regular.ttf')
+  bolt = loadImage("captismediafiles/bolt.svg")
+  backgroundgradient = loadImage("captismediafiles/backgroundgradient.jpg")
+  lock = loadImage("captismediafiles/lock.png")
+  playergradient = loadImage("captismediafiles/playergradient.png")
+  opponentgradient = loadImage("captismediafiles/opponentgradient.png")
+  flagimage = loadImage("captismediafiles/goodflag.png");
+  portalgradient = loadImage("captismediafiles/portalgradient.png");
+  yellowcirculargradient = loadImage("captismediafiles/yellowcirculargradient.png");
+  greencirculargradient = loadImage("captismediafiles/greencirclegradient.png");
+  circlegradient=  loadImage("captismediafiles/circlegradient.png");
 }
 
 
